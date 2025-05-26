@@ -21,7 +21,13 @@ export const links: Route.LinksFunction = () => [
     rel: "stylesheet",
     href: "https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap",
   },
-];
+];if (typeof window !== "undefined") {
+  import("@syncfusion/ej2-base").then((ej2Base) => {
+    ej2Base.registerLicense(import.meta.env.VITE_SYNCFUSION_LICENSE_KEY);
+  });
+}
+// registerLicense(import.meta.env.VITE_SYNCFUSION_LICENSE_KEY);
+
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
