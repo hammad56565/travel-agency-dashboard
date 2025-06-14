@@ -8,22 +8,36 @@
     "start": "react-router-serve ./build/server/index.js",
     "typecheck": "react-router typegen && tsc"
   },
+  "resolutions": {
+    "vite": "5.4.11"
+  },
   "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@google/generative-ai": "^0.24.1",
+    "@mui/material": "^7.1.0",
+    "@mui/x-data-grid": "^8.5.0",
     "@react-router/node": "^7.5.3",
     "@react-router/serve": "^7.5.3",
     "@syncfusion/ej2-base": "^29.2.4",
     "@syncfusion/ej2-react-buttons": "^29.2.5",
     "@syncfusion/ej2-react-charts": "^29.2.5",
     "@syncfusion/ej2-react-dropdowns": "^29.2.5",
-    "@syncfusion/ej2-react-grids": "^29.2.5",
+    "@syncfusion/ej2-react-grids": "^29.2.7",
     "@syncfusion/ej2-react-maps": "^29.2.4",
     "@syncfusion/ej2-react-navigations": "^29.2.5",
     "@syncfusion/ej2-react-splitbuttons": "^29.2.4",
+    "appwrite": "^18.1.1",
     "clsx": "^2.1.1",
+    "dayjs": "^1.11.13",
+    "dotenv": "^16.5.0",
     "isbot": "^5.1.27",
     "react": "^19.1.0",
+    "react-burger-menu": "^3.1.0",
     "react-dom": "^19.1.0",
     "react-router": "^7.5.3",
+    "stripe": "^18.2.1",
+    "swiper": "^6.5.0",
     "tailwind-merge": "^3.3.0"
   },
   "devDependencies": {
@@ -31,10 +45,12 @@
     "@tailwindcss/vite": "^4.1.4",
     "@types/node": "^20",
     "@types/react": "^19.1.2",
+    "@types/react-burger-menu": "^2.8.7",
     "@types/react-dom": "^19.1.2",
+    "@types/stripe": "^8.0.416",
     "tailwindcss": "^4.1.4",
     "typescript": "^5.8.3",
-    "vite": "^6.3.3",
+    "vite": "^5.4.19",
     "vite-tsconfig-paths": "^5.1.4"
   }
 }

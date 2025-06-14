@@ -1,0 +1,46 @@
+/* Sidebar.css */
+.bm-burger-button {
+  position: fixed;
+  width: 30px;
+  height: 24px;
+  left: auto;
+    right: 16px;
+  top: 16px;
+  
+}
+
+.bm-burger-bars {
+  background: #333;
+}
+
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+.bm-cross {
+  background: #999;
+}
+
+.bm-menu {
+  background: #FFF; /* Tailwind's gray-800 */
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+.bm-menu-wrap{
+  width: 250px;
+}
+.bm-menu-wrap {
+    width: 250px !important;
+}
+.bm-item {
+  display: inline-block;
+  color: white;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.bm-item:hover {
+  color: #f59e0b; /* Tailwind's amber-500 */
+}
