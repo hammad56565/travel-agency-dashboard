@@ -7,8 +7,8 @@ import Stripe from 'stripe';
 // import {createProduct} from "~/lib/stripe";
 
 import {parseMarkdownToJson, parseTripData} from "~/lib/utils";
-import dotenv from 'dotenv';                
-dotenv.config(); 
+// import dotenv from 'dotenv';                
+// dotenv.config(); 
 
 // export const action = async ({ request }: ActionFunctionArgs) => {
 //     const {
