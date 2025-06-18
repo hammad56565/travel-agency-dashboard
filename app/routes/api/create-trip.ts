@@ -7,8 +7,8 @@ import Stripe from 'stripe';
 // import {createProduct} from "~/lib/stripe";
 
 import {parseMarkdownToJson, parseTripData} from "~/lib/utils";
-import dotenv from 'dotenv';
-dotenv.config();
+import dotenv from 'dotenv';                
+dotenv.config(); 
 
 // export const action = async ({ request }: ActionFunctionArgs) => {
 //     const {
@@ -195,7 +195,7 @@ export const action = async ({ request }: ActionFunctionArgs) => {
       budget,
       userId,
       groupType,
-      interest,
+      interests,
     } = data;
 
     const apiKey = process.env.GEMINI_API_KEY;
@@ -209,7 +209,7 @@ export const action = async ({ request }: ActionFunctionArgs) => {
 
     const prompt = `Generate a ${numberOfDays}-day travel itinerary for ${country} based on the following user information:
          Budget: '${budget}'
-         Interests: '${interest}'
+         Interests: '${interests}'
          TravelStyle: '${travelStyle}'
          GroupType: '${groupType}'
          Return the itinerary and lowest estimated price in a clean, non-markdown JSON format with the following structure:
@@ -221,7 +221,7 @@ export const action = async ({ request }: ActionFunctionArgs) => {
          "budget": "${budget}",
          "travelStyle": "${travelStyle}",
          "country": "${country}",
-         "interests": ${interest},
+         "interests": ${interests},
          "groupType": "${groupType}",
          "bestTimeToVisit": [
            '🌸 Season (from month to month): reason to visit',
@@ -263,7 +263,7 @@ export const action = async ({ request }: ActionFunctionArgs) => {
     const UnsplashApi = process.env.UNSPLASH_ACCESS_KEY!;
     console.log("Unsplash API Key:", UnsplashApi);
     const imageRes = await fetch(
-      `https://api.unsplash.com/search/photos?query=${country}+${interest}&client_id=${UnsplashApi}`
+      `https://api.unsplash.com/search/photos?query=${country}+${interests}&client_id=${UnsplashApi}`
     );
     const imageJson = await imageRes.json();
     // console.log("🖼️ Unsplash image results:", imageJson.results);

@@ -2,7 +2,7 @@ import type { AxisModel } from "@syncfusion/ej2-react-charts";
 import { formatDate } from "~/lib/utils";
 
   export const user = {name :'Adrian'}
-  export const dashbardStats = {
+  export const dashboardStats = {
     totalUsers: 1240,
     userJoined: {currentMonth: 120, lastMonth: 100},
     totalTrips: 3210,

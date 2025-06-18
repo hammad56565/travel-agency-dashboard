@@ -1,0 +1,26 @@
+import { logoutUser } from '~/appwrite/auth'
+// import React from "react";
+import { useNavigate } from "react-router"; // ✅ add this line
+// other imports...
+
+const PageLayout = () => {
+      const navigate = useNavigate()
+
+    const handleLogout = async () => {
+        // Implement logout functionality here
+        console.log('logout')
+        await logoutUser() 
+        navigate('/sign-in')
+    }
+  return (
+    <div>
+       <button onClick={handleLogout} className='cursor-pointer'>
+                <img src="/assets/icons/logout.svg" alt="logout" className='size-6' />
+            </button>
+
+            <button onClick={()=>{navigate('/dashboard')}}>Dashboard</button>
+    </div>
+  )
+}
+
+export default PageLayout

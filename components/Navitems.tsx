@@ -15,7 +15,7 @@ const Navitems = ( {handleClick} : {handleClick?: () => void}) => {
         navigate('/sign-in')
     }
   return (
-    <section>
+    <section className='nav-items'>
         <Link to="/" className='link-logo '>
             <img src="/assets/icons/logo.svg" alt="logo" className='size-[30px] '/>
             <h1>TourVisot</h1>
@@ -37,7 +37,7 @@ const Navitems = ( {handleClick} : {handleClick?: () => void}) => {
                     </NavLink>
                 ))}
             </nav>
-           <footer className="nav-footer">
+           <footer className="nav-footer mt-15">
             <img src={user?.imageUrl || '/assets/images/david.webp'} alt={user?.name || 'David'} referrerPolicy='no-referrer'  />
             <article>
                 <h2>{user?.name}</h2>
