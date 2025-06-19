@@ -61,6 +61,7 @@ const getGooglePicture = async (accessToken: string) => {
     }
 };
 
+
 export const loginWithGoogle = async () => {
     try {
         account.createOAuth2Session(
