@@ -13,7 +13,7 @@ const PageLayout = () => {
         navigate('/sign-in')
     }
   return (
-    <div>
+    <div className='flex items-center justify-between p-4 bg-gray-100'>
        <button onClick={handleLogout} className='cursor-pointer'>
                 <img src="/assets/icons/logout.svg" alt="logout" className='size-6' />
             </button>
