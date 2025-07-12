@@ -194,7 +194,7 @@ if (
         </div>
       </section>
       <section className="container">
-        <h1 className="text-xl font-semibold text-gray-100">Created Trips</h1>
+        <h1 className="text-xl font-semibold text-gray-100 mt-6">Created Trips</h1>
         <div className="trip-grid">
           {/* {allTrips.slice(0 , 4).map((trip) => (
               <TripCard/>
@@ -215,7 +215,7 @@ if (
 {!ChartComponent ? (
   <div className="text-white">Loading charts...</div>
 ) : (
-      <section className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+      <section className="grid grid-cols-1 lg:grid-cols-2 my-3 gap-5">
         <ChartComponent
           id="chart-1"
           primaryXAxis={userXAxis}

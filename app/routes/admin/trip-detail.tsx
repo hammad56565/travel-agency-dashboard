@@ -114,7 +114,7 @@ const TripDetail = ({ loaderData } : Route.ComponentProps) => {
             </header>
             <section className="gallery">{imageUrls.map((url : string,i : number) =>(
                  <img src={url} key={i} className={cn('w-full rounded-xl object-cover' ,i ===0 ?
-                    'md-col-span-2 md:row-span-2 h-[320px] ' : 'md:h-[150px]  md:row-span-1'  
+                    'md:col-span-2 md:row-span-2 h-[320px] ' : 'md:h-[150px]  md:row-span-1'  
                  )} />
             ) )}</section>
             <section className="flex gap-3 md:gap-5 items-center flex-wrap">

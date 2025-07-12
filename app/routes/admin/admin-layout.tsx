@@ -28,11 +28,11 @@ const AdminLayout = () => {
      <MobileSidebar />
      <div  className='mobile-sidebar wrapper'><Sidebar/></div>
      
- <aside className='w-full  max-w-[270px] px-3 hidden lg:block' >
+ <aside className='w-full !fixed max-w-[270px] px-3 hidden lg:block' >
         <Navitems></Navitems>
       </aside>
         
-        <aside className='children'>
+        <aside className='children !ml-[280px]'>
             <Outlet />
         </aside>
  
